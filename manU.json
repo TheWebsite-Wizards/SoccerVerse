@@ -1,68 +1,68 @@
 [
     {
-        "imgSrc": "./images/ManU/10002.png",
+        "imgSrc": "./images/Arsenal-folder/10002.png",
         "name": "Hieran Tierny",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": " Hieran Tierny is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10003.png",
+        "imgSrc": "./images/Arsenal-folder/10003.png",
         "name": "Ben White",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Ben Whiteis a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10004.png",
+        "imgSrc": "./images/Arsenal-folder/10004.png",
         "name": "Gabriel Magahlaes",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Gabriel Magahlaes is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10005.png",
+        "imgSrc": "./images/Arsenal-folder/10005.png",
         "name": "William Saliba",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "William Saliba is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10006.png",
+        "imgSrc": "./images/Arsenal-folder/10006.png",
         "name": "Jakub Kiwior",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Jakub Kiwior is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10007.png",
+        "imgSrc": "./images/Arsenal-folder/10007.png",
         "name": "Rob Holding",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Rob Holding is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10008.png",
+        "imgSrc": "./images/Arsenal-folder/10008.png",
         "name": "Takehiro Tomiyasu",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Takehiro Tomiyasu is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10009.png",
+        "imgSrc": "./images/Arsenal-folder/10009.png",
         "name": "Olekzandhr Zincheko",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Olekzandhr Zincheko is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10010.png",
+        "imgSrc": "./images/Arsenal-folder/10010.png",
         "name": "Cedric Soares",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Cedric Soares is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10011.png",
+        "imgSrc": "./images/Arsenal-folder/10011.png",
         "name": "Nuno Tavares",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Nuno Tavares is a talented defender..."
     },
     {
-        "imgSrc": "./images/ManU/10001.png",
+        "imgSrc": "./images/Arsenal-folder/10001.png",
         "name": "Aaron Ramsdale",
         "position": "Defender",
-        "description": "Victor Lindelof is a talented defender..."
+        "description": "Aaron Ramsdale is a talented defender..."
     }
 ]
