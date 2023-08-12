@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoccerVerse</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .banner {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./images/index-shot.jpeg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+      font-size: 70px;
+      margin-top: 80px;
+}
+header ul li:nth-child(1) a{
+    color: #79C131;
+    }
+    header ul li:nth-child(1) a::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--primcolor);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        border-top-right-radius:30px ;
+        border-bottom-right-radius:30px ;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body ng-app="myApp">
+    <div class="banner">
+        <header>
+            <p class="logo">SoccerVerse</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="fixtures.html">fixtures</a></li>
+                <li><a href="Premier-league.html">gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </header>
+        
+        <div class="content">
+            <h1>EXPLORE THE FIELD</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis in error?</p>
+        </div>
+    </div>
+    <section class="index-body">
+        <div class="updates">
+            <h1>Latest update</h1>
+            <div class="update-cont">
+                <div class="update">
+                    <img src="./images/update-1.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores deleniti at nobis omnis expediam ipsam ea vero temporibus?</p>
+                </div>
+                <div class="update">
+                    <img src="./images/Update-2.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores deleniti at nobis omnis expediam ipsam ea vero temporibus?</p>
+                </div>
+                <div class="update">
+                    <img src="./images/update-3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores deleniti at nobis omnis expediam ipsam ea vero temporibus?</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/mid-shot.jpeg" alt="" class="poster">
+        <section class="about">
+            <h1>our team</h1>
+            <div class="about-cont">
+                <div class="member">
+                    <img src="./images/ire.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Ogunmuyiwa Ireoluwa</h2>
+                        <p>Aspiring Software Engineer</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/koyum.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Salawudeen Quoyum</h2>
+                        <p>Aspiring Software Engineer</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/micheal.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Orji Micheal</h2>
+                        <p>Aspiring Software Enjineer</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/richard.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Abimbola Richard</h2>
+                        <p>Aspiring Fullstack Developer</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/rico.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Oluwatomisin Iyanu</h2>
+                        <p>Aspiring Security Expert</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/fola.jpg" alt="">
+                    <div class="member-desc">
+                        <h2>Sodoke Folajuwan</h2>
+                        <p>Aspiring System Analyst</p>
+                        <div class="member-social"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-2">
+                <h2>SoccerVerse</h2>
+            </div>
+            <div class="about-xtra">
+                
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-cont-container">
+          <div class="footer-cont">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis expedita, voluptate eum Lorem ipsum dolor, sit amet consectetur adipisicing jnh uih m9j ij9j09.k0k.09  <br> <br></p>
+        </div>
+        <div class="footer-cont">
+            <h4>Get in Touch</h4>
+            <p class="head">Location:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisi jjuhihijin.</p>
+            <p class="head">Contact:</p>
+            <p>Phone : +012 345 6789 0123 <br>
+                Email : info@example.com</p>
+            </div>
+            <div class="footer-cont">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="gallery.html">fixtures</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="news&events.html">news & events</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont">
+                <h4>Sign up for your offers</h4>
+                <p>By suscribing to our mailing list, you will always get latest news and updates from us.</p>
+                <input type="email" placeholder="Enter your email...">
+            </div>
+        </div>
+        <p class="end-credits"> ©2023 Bet-City. All Rights Reserved | Design by <span>Website Wizards</span></p>    
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

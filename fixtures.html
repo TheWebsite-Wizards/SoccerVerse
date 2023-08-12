@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .banner{
+            background-color: var(--black);
+            position: fixed;
+            z-index: 1000;
+    width: 100%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+  
+  .content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+header ul li:nth-child(2) a{
+        color: #79C131;
+    }
+    header ul li:nth-child(2) a::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--primcolor);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        border-top-right-radius:30px ;
+        border-bottom-right-radius:30px ;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+h2{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.photo-banner{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+.fixture-text{
+    text-align: center;
+}
+.fixture{
+    height: 33vh;
+    border: 2px solid #E8E8E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+.fixtures{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 5vh;
+}
+img{
+    height: 70px;
+    width: 90px;
+}
+@media screen and (max-width: 576px){
+    img{
+        height: 40px;
+        width: 50px;
+    }
+    h2{
+        font-size: small;
+    }
+}
+
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner other">
+        <header>
+            <p class="logo">SoccerVerse</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixtures.html">fixtures</a></li>
+                <li><a href="Premier-league.html">gallery</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </header>
+    </div>
+    <section class="news-body">
+        <h4><u>Fixtures</u></h4>
+        <div class="fixtures">
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/crystal.png" alt=""></div>
+                    <div class="vs"><h2>2 : 0</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/leeds.png" alt=""></div>
+                    
+                </div>
+                <div class="fixture-text">
+                    <h2>Crystal Palace vs Leeds</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/wolves.png" alt=""></div>
+                    <div class="vs"><h2>3 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/cheslea.png" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Wolves VS Chealsea</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view3.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/arse.png" alt=""></div>
+                    <div class="vs"><h2>5 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/liver.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Arsenal VS Liverpool</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view4.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/leic.png" alt=""></div>
+                    <div class="vs"><h2>3 : 4</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/bright.png" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Lok FC VS Bright FC</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view21.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/ffc.png " alt=""></div>
+                    <div class="vs"><h2>4 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/bfc.png" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Fullham VS Brentford</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view5.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/bayern.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 8</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/psg.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Bayern Vs Psg</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view6.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/newscast.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 4</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/liver.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Newcastle Vs Liverpool</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view7.html">View</a></p>
+                </div>
+            </div>   
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/inter.jpg" alt=""></div>
+                    <div class="vs"><h2>5 : 5</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/Acmillan.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Inter Mlian Vs Ac Mlian</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view8.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/Alnass.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 0</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/Alhy.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Alnassar Vs Al Alhy</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="view9.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/bright.png" alt=""></div>
+                    <div class="vs"><h2>3 : 3</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/mancity.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Brighton vs Man City</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view10.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/napoli.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 1</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/juve.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Napoli Vs Juventus</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view11.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/miami.jpg" alt=""></div>
+                    <div class="vs"><h2>1 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/Alnass.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Inter Miami Vs Alnassar</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view12.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/man u.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 4</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/cheslea.png" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Man United Vs Cheslea</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view13.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/wolfs.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/atl.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2> Wolfsburg Vs Atalanta</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view14.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/Everton.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 3</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/scp.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Everton Vs Sporting Lisbon</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view15.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/leic.png" alt=""></div>
+                    <div class="vs"><h2>4 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/Dortmund.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Leicester VS Borussia Dortmund</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view16.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/benifca.jpg" alt=""></div>
+                    <div class="vs"><h2>0 : 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/porto.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Benfica Vs Porto</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view17.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/lazio.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 5</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/burnley.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Lazio Vs Burnely</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view18.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="././images/assets/sevilla.jpg" alt=""></div>
+                    <div class="vs"><h2>5: 2</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/valencia.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Sevilla Vs Valencia</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view19.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/ogc.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 3</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/lile.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Nice Vs Lille</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view20.html">View</a></p>
+                </div>
+            </div>
+            <div class="fixture">
+                <div class="photo-banner">
+                    <div class="fix-pic"><img src="./images/assets/levante.jpg" alt=""></div>
+                    <div class="vs"><h2>3 : 3</h2></div>
+                    <div class="fix-pic2"><img src="./images/assets/valladoid.jpg" alt=""></div>
+                </div>
+                <div class="fixture-text">
+                    <h2>Levante Vs Real Valladiod</h2>
+                    <br>
+                    <p class="fixture-date">April 1,2023,1 AM <br><a href="./views/view2.html">View</a></p>
+                </div>
+            </div>
+            
+        </div>
+    </main>   
+</section>
+    <footer>
+        <div class="footer-cont-container">
+            <div class="footer-cont">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis expedita, voluptate eum Lorem ipsum dolor, sit amet consectetur adipisicing jnh uih m9j ij9j09.k0k.09  <br> <br></p>
+            </div>
+            <div class="footer-cont">
+                <h4>Get in Touch</h4>
+                <p class="head">Location:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi jjuhihijin.</p>
+                <p class="head">Contact:</p>
+                <p>Phone : +012 345 6789 0123 <br>
+                    Email : info@example.com</p>
+                </div>
+                <div class="footer-cont">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="gallery.html">fixtures</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="news&events.html">news & events</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont">
+                <h4>Sign up for your offers</h4>
+                <p>By suscribing to our mailing list, you will always get latest news and updates from us.</p>
+                <input type="email" placeholder="Enter your email...">
+            </div>
+        </div>
+        <p class="end-credits"> ©2023 Bet-City. All Rights Reserved | Design by <span>Website Wizards</span></p>    
+    </footer>
+</body>
+</html>

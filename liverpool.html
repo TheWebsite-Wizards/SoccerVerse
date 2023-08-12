@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SoccerVerse</title>
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+    <style>
+.banner{
+    background-color: var(--black);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+  
+  .content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+header ul li:nth-child(3) a{
+        color: #79C131;
+    }
+    header ul li:nth-child(3) a::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--primcolor);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        border-top-right-radius:30px ;
+        border-bottom-right-radius:30px ;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <header>
+            <p class="logo">SoccerVerse</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixtures.html">fixtures</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="news&events.html">news & events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </header>
+    </div>
+    <section class="gallery-body">
+        <div class="league-cont">
+            <div class="league-head">
+                <h1>Top 5 in</h1>
+                <select class="league" id="leagueSelect">
+                    <option value="premier-league">Premier League</option>
+                    <option value="la-liga">La Liga</option>
+                    <option value="league-1">League-1</option>
+                    <option value="seria-a">Seria-a</option>
+                    <option value="bundesliga">Bundesliga</option>
+                </select>
+            </div>
+            <div class="league-team">
+                <div class="sect-team">
+                    <p class="teams pl"><img src="images/Premier-league-table/man-u.svg" alt=""> Manchester United</p>
+                    <p class="teams pl active" ><img src="images/Premier-league-table/liverpool.svg" alt=""> Liverpool</p>
+                    <p class="teams pl"><img src="images/Premier-league-table/Arsenal.svg" alt=""> Arsenal</p>
+                    <p class="teams pl"><img src="images/Premier-league-table/man-city.svg" alt=""> Manchester City</p>
+                    <p class="teams pl  "><img src="images/Premier-league-table/Chelsea.svg" alt=""> Chelsea</p>
+                </div>
+                
+                <div class="team-reveal no2" id="playerContainer">
+                    <!-- Player details will be added here dynamically -->
+                </div>
+                
+                <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="playerModalLabel">Player Name</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="player-details">
+                                    <img id="playerImage" src="" alt="Player Image">
+                                    <div class="player-info">
+                                        <p>Position: <span id="playerPosition"></span></p>
+                                        <p>Description: <span id="playerDescription"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-tetiary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                              
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-cont-container">
+          <div class="footer-cont">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis expedita, voluptate eum Lorem ipsum dolor, sit amet consectetur adipisicing jnh uih m9j ij9j09.k0k.09  <br> <br></p>
+        </div>
+        <div class="footer-cont">
+            <h4>Get in Touch</h4>
+            <p class="head">Location:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisi jjuhihijin.</p>
+            <p class="head">Contact:</p>
+            <p>Phone : +012 345 6789 0123 <br>
+                Email : info@example.com</p>
+            </div>
+            <div class="footer-cont">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="gallery.html">fixtures</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="news&events.html">news & events</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont">
+                <h4>Sign up for your offers</h4>
+                <p>By suscribing to our mailing list, you will always get latest news and updates from us.</p>
+                <input type="email" placeholder="Enter your email...">
+            </div>
+        </div>
+        <p class="end-credits"> ©2023 Bet-City. All Rights Reserved | Design by <span>Website Wizards</span></p>    
+    </footer>
+    <script src="script.js">  </script>
+    <script>
+        const playerContainer = document.getElementById("playerContainer");
+        const playerModal = new bootstrap.Modal(document.getElementById("playerModal"));
+        const modalTitle = document.getElementById("playerModalLabel");
+        const playerImage = document.getElementById("playerImage");
+        const modalPosition = document.getElementById("playerPosition");
+        const modalDescription = document.getElementById("playerDescription");
+    
+        // Fetch and parse the JSON file
+        fetch("players.json")
+            .then(response => response.json())
+            .then(playerData => {
+                playerData.forEach(player => {
+                    const playerDiv = document.createElement("div");
+                    playerDiv.className = "player";
+    
+                    const playerImg = document.createElement("img");
+                    playerImg.src = player.imgSrc;
+                    playerImg.alt = "";
+    
+                    const playerName = document.createElement("p");
+                    playerName.textContent = player.name;
+    
+                    playerDiv.appendChild(playerImg);
+                    playerDiv.appendChild(playerName);
+    
+                    playerDiv.addEventListener("click", () => {
+                        modalTitle.textContent = player.name;  // Set modal title
+                        playerImage.src = player.imgSrc;
+                        modalPosition.textContent = player.position;
+                        modalDescription.textContent = player.description;
+    
+                        playerModal.show();
+                    });
+    
+                    playerContainer.appendChild(playerDiv);
+                });
+            })
+            .catch(error => console.error("Error fetching player data:", error));
+    </script>
+    
+    
+    
+    </style>
+</body>
+</html>

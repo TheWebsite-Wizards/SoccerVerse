@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .banner{
+    background-color: var(--black);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+  
+  .content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+header ul li:nth-child(5) a{
+        color: #79C131;
+    }
+    header ul li:nth-child(5) a::after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background: var(--primcolor);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        border-top-right-radius:30px ;
+        border-bottom-right-radius:30px ;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div class="banner other">
+        <header>
+            <p class="logo">SoccerVerse</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixtures.html">fixtures</a></li>
+                <li><a href="Premier-league.html">gallery</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </header>
+    </div>
+    <section class="contact-body">
+        <h1>Contact us</h1>
+        <div id="main">
+            <div class="contact"> <br>We know sometimes you need to contact us, and we want to make sure we get you in touch with the right place for your specific query.</div>
+        <div class="contact1"> 
+            <form>
+                <h2>Send Us Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="Name" required="required" placeholder="Full Name.."><br>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="Email" required="required" placeholder="Email.."><br>
+                </div>
+                <div class="inputBox">
+                    <textarea id="text" required="required" placeholder="Type your message...."></textarea><br>
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="div1">
+        <label>
+            <section>
+                <h4> Are You satisfied with our services </h4>  
+                
+                <input type="radio" name="team" value="yes">
+                Yes
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="team" value="no">
+                No
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="team" value="still considering">
+                Still Considering
+            </label>
+        
+            
+            
+            <form>
+                <label for="comments">If you are undecided please give us a feedback as to how we can improve <br>
+                    our services and give you the best experience when looking information about soccer.</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50">
+                        Enter your feedback here...
+                    </textarea><br><br>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-cont-container">
+              <div class="footer-cont">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis expedita, voluptate eum Lorem ipsum dolor, sit amet consectetur adipisicing jnh uih m9j ij9j09.k0k.09  <br> <br></p>
+            </div>
+            <div class="footer-cont">
+                <h4>Get in Touch</h4>
+                <p class="head">Location:</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisi jjuhihijin.</p>
+                <p class="head">Contact:</p>
+                <p>Phone : +012 345 6789 0123 <br>
+                    Email : info@example.com</p>
+                </div>
+                <div class="footer-cont">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="gallery.html">fixtures</a></li>
+                        <li><a href="gallery.html">gallery</a></li>
+                        <li><a href="news&events.html">news & events</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cont">
+                    <h4>Sign up for your offers</h4>
+                    <p>By suscribing to our mailing list, you will always get latest news and updates from us.</p>
+                    <input type="email" placeholder="Enter your email...">
+                </div>
+            </div>
+            <p class="end-credits"> ©2023 Bet-City. All Rights Reserved | Design by <span>Website Wizards</span></p>    
+        </footer>
+    </body>
+</html>
