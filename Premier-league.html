@@ -168,7 +168,7 @@ header ul li:nth-child(3) a{
         const modalDescription = document.getElementById("playerDescription");
     
         // Fetch and parse the JSON file
-        fetch("ManU.json")
+        fetch("manU.json")
             .then(response => response.json())
             .then(playerData => {
                 playerData.forEach(player => {
