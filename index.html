@@ -152,6 +152,119 @@ header ul li:nth-child(1) a{
             </div>
         </section>
     </section>
+    <section class="sitemap">
+    <h2>Sitemap</h2>
+    <ul>
+        <li><a href="#/!">Home</a>
+            <ul>
+                <li><a href="#/!">Home Page</a></li>
+            </ul>
+        </li>
+        <li><a href="#!fixtures">Fixtures</a></li>
+        <li><a href="#!gallery">Gallery</a></li>
+        <li><a href="#!news&events">News & Events</a></li>
+        <li><a href="#!contact">Contact Us</a></li>
+    </ul>
+</section>
+
+<!-- ... the rest of your HTML content ... -->
+
+
+<!-- ... the rest of your HTML content ... -->
+
+    
+    <section class="index-body">
+        <!-- ... your main content ... -->
+    </section>
+    
+    <div ng-view></div>
+    
+    <footer>
+        <!-- ... your footer content ... -->
+    </footer>
+    
+    <script>
+        // ... your JavaScript code ...
+    </script>
+    <style>
+         /* Enhanced Sitemap Styles */
+.sitemap {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sitemap h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sitemap ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sitemap ul li {
+    margin-bottom: 10px;
+}
+
+.sitemap ul ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.sitemap a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.sitemap a:hover {
+    color: #79C131;
+}
+
+/* Styling for sub-menu items */
+.sitemap ul ul a {
+    color: #666;
+    font-size: 14px;
+}
+
+.sitemap ul ul a:hover {
+    color: #555;
+}
+
+/* Add arrow icon for sub-menus */
+.sitemap ul ul::before {
+    content: "►";
+    color: #aaa;
+    margin-right: 5px;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.sitemap ul li:hover ul::before {
+    transform: rotate(90deg);
+}
+
+/* Styling for active page link */
+.sitemap a.active {
+    font-weight: bold;
+    color: #79C131;
+}
+
+ 
+
+ 
+
+
+ 
+    </style>
+
     <footer>
         <div class="footer-cont-container">
           <div class="footer-cont">
