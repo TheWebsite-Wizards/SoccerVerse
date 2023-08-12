@@ -945,7 +945,6 @@ p.teams img{
   width: 25px;
 }
 .team-reveal{
-  border: 1px solid yellow;
   grid-template-columns: repeat(3, 1fr);
 }
 .team-reveal .player{
