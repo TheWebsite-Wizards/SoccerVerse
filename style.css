@@ -51,7 +51,6 @@ header ul{
     width: 60%;
     font-size: 20px;
     justify-content: space-between;
-    text-transform: uppercase;
 }
 
 header.sticky {
